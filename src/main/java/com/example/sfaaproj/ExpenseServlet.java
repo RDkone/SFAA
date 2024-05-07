@@ -16,9 +16,9 @@ import java.util.List;
 
 @WebServlet(name = "expenseServlet", value = "/expenses")
 public class ExpenseServlet extends HttpServlet {
-    private static final String DB_URL = "jdbc:postgresql://localhost:5432/sfaa";
-    private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "do07Sti=6D@A";
+    private static final String DB_URL = "jdbc:postgresql://cf9gid2f6uallg.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/db7svujot0s1tl";
+    private static final String DB_USER = "udlour4ugvrsgl";
+    private static final String DB_PASSWORD = "pdcdc5d482397bde07cca535fba58801e132f94494547be8e646e5514d1c0fa2d";
 
     private static final List<String> SYSTEM_CATEGORIES = Arrays.asList(
             "Transportation", "Supplies", "Miscellaneous", "Rent", "Utility Bills", "Food"
