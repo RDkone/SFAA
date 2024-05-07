@@ -52,7 +52,7 @@ public class RegistrationServlet extends HttpServlet {
                 RequestDispatcher requestDispatcher = req.getRequestDispatcher("registration.jsp");
                 requestDispatcher.forward(req, resp);
             }
-            try (Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sfaa", "postgres", "do07Sti=6D@A");
+            try (Connection con = DriverManager.getConnection("jdbc:postgresql://cf9gid2f6uallg.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/db7svujot0s1tl", "udlour4ugvrsgl", "pdcdc5d482397bde07cca535fba58801e132f94494547be8e646e5514d1c0fa2d");
                  PreparedStatement ps = con.prepareStatement("INSERT INTO users (username, email, password) VALUES (?, ?, ?) RETURNING user_id")) {
                 ps.setString(1, username);
                 ps.setString(2, email);
@@ -84,7 +84,7 @@ public class RegistrationServlet extends HttpServlet {
             req.setAttribute("error", "An error occurred attempting to connect to the server.");
             return true;
         }
-        try (Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sfaa", "postgres", "do07Sti=6D@A");
+        try (Connection con = DriverManager.getConnection("jdbc:postgresql://cf9gid2f6uallg.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/db7svujot0s1tl", "udlour4ugvrsgl", "pdcdc5d482397bde07cca535fba58801e132f94494547be8e646e5514d1c0fa2d");
              PreparedStatement ps = con.prepareStatement("SELECT * FROM users WHERE username = ? OR email = ?")) {
             ps.setString(1, username);
             ps.setString(2, email);
