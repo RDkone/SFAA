@@ -2,10 +2,10 @@ package com.example.sfaaproj;
 
 import java.io.*;
 
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+import javax.servlet.annotation.*;
 
 @WebServlet(name = "homeServlet", value = "/home")
 public class HomeServlet extends HttpServlet {
