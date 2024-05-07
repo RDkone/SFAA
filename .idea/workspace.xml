@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="JavaEE migration">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/AccountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/AccountServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/AuthServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/ExpenseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/ExpenseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/GPACalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/GPACalculatorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/TuitionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/TuitionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="upgrade to java version 11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715057927957</updated>
-      <workItem from="1715057929049" duration="7201000" />
+      <workItem from="1715057929049" duration="7898000" />
     </task>
     <task id="LOCAL-00001" summary="remove target from ignore">
       <option name="closed" value="true" />
@@ -203,7 +189,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715065192213</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Change back, random errors">
+      <option name="closed" value="true" />
+      <created>1715065498788</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715065498788</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Tomcat 10.1.16.0">
+      <option name="closed" value="true" />
+      <created>1715065661313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715065661313</updated>
+    </task>
+    <task id="LOCAL-00018" summary="upgrade to java version 11">
+      <option name="closed" value="true" />
+      <created>1715066152777</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715066152777</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +229,9 @@
     <MESSAGE value="Upgrade Tomcat to 10.1.23" />
     <MESSAGE value="pom xml change" />
     <MESSAGE value="JavaEE migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="JavaEE migration" />
+    <MESSAGE value="Change back, random errors" />
+    <MESSAGE value="Tomcat 10.1.16.0" />
+    <MESSAGE value="upgrade to java version 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade to java version 11" />
   </component>
 </project>

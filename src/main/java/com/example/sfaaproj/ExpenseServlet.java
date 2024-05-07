@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@WebServlet(name = "expenseServlet", value = "/expenses")
 public class ExpenseServlet extends HttpServlet {
     private static final String DB_URL = "jdbc:postgresql://cf9gid2f6uallg.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/db7svujot0s1tl";
     private static final String DB_USER = "udlour4ugvrsgl";

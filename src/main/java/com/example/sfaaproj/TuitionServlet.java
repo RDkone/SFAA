@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-@WebServlet(name = "tuitionServlet", value = "/tuition")
 public class TuitionServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         AuthServlet authServlet = new AuthServlet();
