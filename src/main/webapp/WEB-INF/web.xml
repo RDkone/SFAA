@@ -68,6 +68,14 @@
         <url-pattern>/tuition</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>com.example.sfaaproj.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>AccountServlet</servlet-name>
         <servlet-class>com.example.sfaaproj.AccountServlet</servlet-class>
     </servlet>

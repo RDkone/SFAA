@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="removed @WebServlet">
+    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="changed db login from local to herokudb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Account.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/Account.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SFAAProj-1.0-SNAPSHOT/images/Account.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/SFAAProj-1.0-SNAPSHOT/images/Account.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +42,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/koner/OneDrive/Documents/IntelliJGit/SFAA&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/koner/OneDrive/Documents/IntelliJGit/SFAA/target/classes/com/example/sfaaproj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pathVariables",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\target\classes\com\example\sfaaproj" />
+      <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\target\SFAAProj-1.0-SNAPSHOT\images" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715057927957</updated>
       <workItem from="1715057929049" duration="7898000" />
-      <workItem from="1715100890517" duration="936000" />
+      <workItem from="1715100890517" duration="2194000" />
     </task>
     <task id="LOCAL-00001" summary="remove target from ignore">
       <option name="closed" value="true" />
@@ -240,11 +251,30 @@
       <option name="project" value="LOCAL" />
       <updated>1715101196565</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="changed db login from local to herokudb">
+      <option name="closed" value="true" />
+      <created>1715103568215</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715103568215</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove target from ignore" />
@@ -260,6 +290,7 @@
     <MESSAGE value="Tomcat 10.1.16.0" />
     <MESSAGE value="upgrade to java version 11" />
     <MESSAGE value="removed @WebServlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed @WebServlet" />
+    <MESSAGE value="changed db login from local to herokudb" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed db login from local to herokudb" />
   </component>
 </project>

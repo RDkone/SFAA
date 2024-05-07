@@ -41,7 +41,7 @@
                     <div class="card shadow-sm">
                         <img src="images/MonthlyExp.png" height="300px" class="card-img-top" alt="Monthly Expenses">
                         <div class="card-body">
-                            <p class="card-text text-center"><a class="text-decoration-none" href="expenses">Monthly Expenses Calculator</a></p>
+                            <p class="card-text text-center"><a class="text-decoration-none" href="expense">Monthly Expenses Calculator</a></p>
                             <div class="d-flex justify-content-between align-items-center">
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                     <div class="card shadow-sm">
                         <img src="images/Account.png" height="300px" class="card-img-top" alt="Monthly Expenses">
                         <div class="card-body">
-                            <p class="card-text text-center"><a class="text-decoration-none" href="account.jsp">Your Account</a></p>
+                            <p class="card-text text-center"><a class="text-decoration-none" href="account">Your Account</a></p>
                             <div class="d-flex justify-content-between align-items-center">
                             </div>
                         </div>

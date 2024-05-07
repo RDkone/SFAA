@@ -20,7 +20,7 @@
                     <a class="nav-link" href="tuition">Tuition Estimator</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="expenses">Expenses Calculator</a>
+                    <a class="nav-link" href="expense">Expenses Calculator</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="register">Register</a>
                 </li>
                 <li id="usrName" class="nav-item">
-                    <a id="usrNameTxt" href="account.jsp" class="nav-link"></a>
+                    <a id="usrNameTxt" href="account" class="nav-link"></a>
                 </li>
                 <li id="loggedOut" class="nav-item">
                     <a class="nav-link" href="logout">Log Out</a>
