@@ -1,1 +1,1 @@
-web: java -jar target/SFAAProj-1.0.0-SNAPSHOT.jar
+web: java -jar target/dependency/SFAAProj.jar target/*.war --port $PORT
