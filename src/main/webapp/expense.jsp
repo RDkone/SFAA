@@ -120,7 +120,7 @@
     <h1 class="centered-header">Expense Manager</h1>
     <div class="centered-card">
         <h2>Expense Report</h2>
-        <form action="expenses" method="get">
+        <form action="expense" method="get">
             <label for="year">Year:</label>
             <select class="input-default" name="year" id="year">
                 <%
@@ -185,7 +185,7 @@
     <div class="centered-card">
 
         <h2>Create Expense</h2>
-        <form action="expenses" method="post">
+        <form action="expense" method="post">
             <input type="hidden" name="action" value="create_expense">
             <div class="input-group">
                 <label for="date">Date:</label>
@@ -219,7 +219,7 @@
     </div>
     <div class="centered-card">
         <h2>Create Expense Category</h2>
-        <form action="expenses" method="post">
+        <form action="expense" method="post">
             <input class="input-default" type="hidden" name="action" value="create_expense_category">
             <label for="expense_category">Expense Category Name:</label>
             <input class="input-default" type="text" id="expense_category" name="expense_category" required><br>
