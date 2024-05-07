@@ -1,1 +1,1 @@
-web: java -jar target/dependency/SFAAProj.jar target/*.war --port $PORT
+web: java $JAVA_OPTS -jar target/dependency/SFAAProj.jar --port $PORT target/*.war
