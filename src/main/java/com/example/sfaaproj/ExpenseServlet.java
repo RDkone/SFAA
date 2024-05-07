@@ -106,7 +106,7 @@ public class ExpenseServlet extends HttpServlet {
             String sql = "INSERT INTO expenses (user_id, date, category, value, description) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, userId);
-            stmt.setString(2, date);
+            stmt.setDate(2, Date.valueOf(date));
             stmt.setString(3, category);
             stmt.setDouble(4, value);
             stmt.setString(5, description);
