@@ -22,7 +22,7 @@ public class RegistrationServlet extends HttpServlet {
             requestDispatcher.forward(request, response);
         }
         else {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF//WEB-INF/registration.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/registration.jsp");
             requestDispatcher.forward(request, response);
         }
     }
