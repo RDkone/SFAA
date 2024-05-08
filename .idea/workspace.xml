@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="JSP Restriction &amp; Account Page Update">
+    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="Account Page Update">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/koner/OneDrive/Documents/IntelliJGit/SFAA/target/classes/com/example/sfaaproj",
+    "last_opened_file_path": "C:/Users/koner/OneDrive/Documents/IntelliJGit/SFAA/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +58,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\src\main\webapp" />
       <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\target\classes\com\example\sfaaproj" />
       <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\target\SFAAProj-1.0-SNAPSHOT\images" />
     </key>
@@ -79,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715057927957</updated>
       <workItem from="1715057929049" duration="7898000" />
-      <workItem from="1715100890517" duration="9077000" />
+      <workItem from="1715100890517" duration="9851000" />
     </task>
     <task id="LOCAL-00001" summary="remove target from ignore">
       <option name="closed" value="true" />
@@ -297,7 +300,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715128579574</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Account Page Error Fix">
+      <option name="closed" value="true" />
+      <created>1715129203972</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715129203972</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Account Page Update">
+      <option name="closed" value="true" />
+      <created>1715129460787</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715129460787</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +353,8 @@
     <MESSAGE value="Expense url fix" />
     <MESSAGE value="SQL Data Param Fix" />
     <MESSAGE value="JSP Restriction &amp; Account Page Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSP Restriction &amp; Account Page Update" />
+    <MESSAGE value="Account Page Error Fix" />
+    <MESSAGE value="Account Page Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Account Page Update" />
   </component>
 </project>
