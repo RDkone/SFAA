@@ -13,11 +13,11 @@ public class WelcomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         AuthServlet authServlet = new AuthServlet();
         if (authServlet.authenticateUser(req)){
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("welcome.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/welcome.jsp");
             requestDispatcher.forward(req, resp);
         }
         else {
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("login.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/login.jsp");
             requestDispatcher.forward(req, resp);
         }
     }

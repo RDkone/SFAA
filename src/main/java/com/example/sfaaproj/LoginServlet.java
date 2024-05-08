@@ -16,11 +16,11 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         AuthServlet authServlet = new AuthServlet();
         if (authServlet.authenticateUser(req)){
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("welcome.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/welcome.jsp");
             requestDispatcher.forward(req, resp);
         }
         else {
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("login.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/login.jsp");
             requestDispatcher.forward(req, resp);
         }
     }
@@ -45,15 +45,15 @@ public class LoginServlet extends HttpServlet {
                 if (rs.next()) {
                     session.setAttribute("user", username);
                     session.setAttribute("userId", rs.getInt("user_id"));
-                    response.sendRedirect("welcome.jsp");
+                    response.sendRedirect("/welcome");
                 } else {
-                    response.sendRedirect("login.jsp?error=true");
+                    response.sendRedirect("/login?error=true");
                 }
             } catch (SQLException e) {
                 throw new ServletException("Login error", e);
             }
         } else {
-            response.sendRedirect("welcome.jsp");
+            response.sendRedirect("/welcome");
         }
     }
 }

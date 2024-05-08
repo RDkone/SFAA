@@ -2,9 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Financial and Academic Assistant - Account</title>
@@ -184,9 +181,72 @@
       <a href="home" class="home-btn">Home</a>
 
       <!-- Logout button -->
-      <a href="logout-servlet" class="logout-btn">Logout</a>
+      <a href="logout" class="logout-btn">Logout</a>
     </main>
   </div>
   <jsp:include page="footer.jsp" />
+  <script>
+    function UpdateAccountType(updType){
+      let updVal1 = "";
+      let updVal2 = "";
+      if (updType === 'updPersonal'){
+        updVal1 = $('#fullName').val();
+        updVal2 = $('#email').val();
+      }
+      if (updType === 'updFinancial'){
+        updVal1 = $('#bankAccount').val();
+        updVal2 = $('#creditCard').val();
+      }
+      if (updType === 'updAcademic'){
+        updVal1 = $('#major').val();
+        updVal2 = $('#gpa').val();
+      }
+      UpdateAccount(updType, updVal1, updVal2);
+
+    }
+    GetAccountInfo("fullName");
+    GetAccountInfo("email");
+    GetAccountInfo("bankAccount");
+    GetAccountInfo("creditCard");
+    GetAccountInfo("major");
+    GetAccountInfo("gpa");
+    function GetAccountInfo(getType){
+      $.ajax({
+        url: 'account',
+        type: 'POST',
+        data: {
+          updType: getType,
+        },
+        success: function (result) {
+          $('#' + getType).val(result);
+        },
+        error: function (err) {
+          console.log('error connecting to server');
+        },
+      });
+    }
+    function UpdateAccount(updType, updVal1, updVal2){
+      $.ajax({
+        url: 'account',
+        type: 'POST',
+        data: {
+          updType: updType,
+          updVal1: updVal1,
+          updVal2: updVal2
+        },
+        success: function (result) {
+          if (result === 'Success') {
+            window.location.reload();
+          }
+          else {
+            alert("Error updating account information");
+          }
+        },
+        error: function (err) {
+          console.log('error connecting to server');
+        },
+      });
+    }
+  </script>
 </body>
 </html>

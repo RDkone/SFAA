@@ -10,7 +10,7 @@ import jakarta.servlet.annotation.*;
 public class HomeServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/index.jsp");
         requestDispatcher.forward(request, response);
     }
 

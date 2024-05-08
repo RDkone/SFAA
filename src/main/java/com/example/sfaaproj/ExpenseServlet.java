@@ -27,7 +27,7 @@ public class ExpenseServlet extends HttpServlet {
             throws ServletException, IOException {
         AuthServlet authServlet = new AuthServlet();
         if (!authServlet.authenticateUser(request)){
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/login.jsp");
             requestDispatcher.forward(request, response);
         }
         String month = request.getParameter("month");
@@ -61,7 +61,7 @@ public class ExpenseServlet extends HttpServlet {
             stmt.setInt(3, Integer.parseInt(year));
             ResultSet rs = stmt.executeQuery();
             request.setAttribute("expenses", rs);
-            request.getRequestDispatcher("expense.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/expense.jsp").forward(request, response);
             rs.close();
             stmt.close();
             conn.close();
@@ -85,10 +85,10 @@ public class ExpenseServlet extends HttpServlet {
                     createExpenseCategory(request, response);
                     break;
                 default:
-                    response.sendRedirect("error.jsp");
+                    response.sendRedirect("/WEB-INF/error.jsp");
             }
         } else {
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("/WEB-INF/error.jsp");
         }
     }
 
@@ -118,7 +118,7 @@ public class ExpenseServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
             // Handle SQL Exception
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("/WEB-INF/error.jsp");
         } catch (ServletException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -145,7 +145,7 @@ public class ExpenseServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
             // Handle SQL Exception
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("/WEB-INF/error.jsp");
         } catch (ServletException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

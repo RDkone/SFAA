@@ -17,11 +17,11 @@ public class TuitionServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         AuthServlet authServlet = new AuthServlet();
         if (authServlet.authenticateUser(req)){
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("tuition-estimator.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/tuition-estimator.jsp");
             requestDispatcher.forward(req, resp);
         }
         else {
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("login.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/login.jsp");
             requestDispatcher.forward(req, resp);
         }
     }

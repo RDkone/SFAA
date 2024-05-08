@@ -14,11 +14,11 @@ public class GPACalculatorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         AuthServlet authServlet = new AuthServlet();
         if (authServlet.authenticateUser(request)){
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("gpacalculator.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/gpacalculator.jsp");
             requestDispatcher.forward(request, response);
         }
         else {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/login.jsp");
             requestDispatcher.forward(request, response);
         }
     }

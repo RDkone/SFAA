@@ -18,11 +18,11 @@ public class RegistrationServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         AuthServlet authServlet = new AuthServlet();
         if (authServlet.authenticateUser(request)){
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("welcome.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/welcome.jsp");
             requestDispatcher.forward(request, response);
         }
         else {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("registration.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF//WEB-INF/registration.jsp");
             requestDispatcher.forward(request, response);
         }
     }
@@ -37,11 +37,11 @@ public class RegistrationServlet extends HttpServlet {
         req.setAttribute("email", email);
         req.setAttribute("password", password);
         if (CheckUserExists(username, email, req)){
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("registration.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/registration.jsp");
             requestDispatcher.forward(req, resp);
         }
         else if (!Validate(username, password, req)) {
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("registration.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/registration.jsp");
             requestDispatcher.forward(req, resp);
         }
         else {
@@ -49,7 +49,7 @@ public class RegistrationServlet extends HttpServlet {
                 Class.forName("org.postgresql.Driver");
             } catch (ClassNotFoundException e) {
                 req.setAttribute("error", "An error occurred attempting to connect to the server.");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("registration.jsp");
+                RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/registration.jsp");
                 requestDispatcher.forward(req, resp);
             }
             try (Connection con = DriverManager.getConnection("jdbc:postgresql://cf9gid2f6uallg.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/db7svujot0s1tl", "udlour4ugvrsgl", "pdcdc5d482397bde07cca535fba58801e132f94494547be8e646e5514d1c0fa2d");
@@ -61,16 +61,16 @@ public class RegistrationServlet extends HttpServlet {
                 if (rs.next()) {
                     session.setAttribute("user", username);
                     session.setAttribute("userId", rs.getInt(1));
-                    resp.sendRedirect("welcome.jsp");
+                    resp.sendRedirect("/WEB-INF/welcome.jsp");
                 }
                 else {
                     req.setAttribute("error", "An attempting to register new user.");
-                    RequestDispatcher requestDispatcher = req.getRequestDispatcher("registration.jsp");
+                    RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/registration.jsp");
                     requestDispatcher.forward(req, resp);
                 }
             } catch (SQLException | IOException e) {
                 req.setAttribute("error", "An error occurred attempting to connect to the server. " + e.getMessage());
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("registration.jsp");
+                RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/registration.jsp");
                 requestDispatcher.forward(req, resp);
             }
         }

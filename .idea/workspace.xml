@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="Expense url fix" />
+    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="SQL Data Param Fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715057927957</updated>
       <workItem from="1715057929049" duration="7898000" />
-      <workItem from="1715100890517" duration="4844000" />
+      <workItem from="1715100890517" duration="8034000" />
     </task>
     <task id="LOCAL-00001" summary="remove target from ignore">
       <option name="closed" value="true" />
@@ -276,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715111172493</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="SQL Data Param Fix">
+      <option name="closed" value="true" />
+      <created>1715111726818</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715111726818</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +322,7 @@
     <MESSAGE value="Web Changes" />
     <MESSAGE value="Account Image Change" />
     <MESSAGE value="Expense url fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expense url fix" />
+    <MESSAGE value="SQL Data Param Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL Data Param Fix" />
   </component>
 </project>
