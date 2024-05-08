@@ -136,7 +136,7 @@
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required>
             </div>
-            <button type="submit">Update Personal Info</button>
+            <button type="button" onclick="UpdateAccountType('updPersonal')">Update Personal Info</button>
           </form>
         </div>
       </section>
@@ -154,7 +154,7 @@
               <label for="creditCard">Credit Card Number:</label>
               <input type="text" id="creditCard" name="creditCard" required>
             </div>
-            <button type="submit">Update Financial Info</button>
+            <button type="button" onclick="UpdateAccountType('updFinancial')">Update Financial Info</button>
           </form>
         </div>
       </section>
@@ -172,7 +172,7 @@
               <label for="gpa">GPA:</label>
               <input type="text" id="gpa" name="gpa" required>
             </div>
-            <button type="submit">Update Academic Info</button>
+            <button type="button" onclick="UpdateAccountType('updAcademic')">Update Academic Info</button>
           </form>
         </div>
       </section>

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="SQL Data Param Fix">
+    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="JSP Restriction &amp; Account Page Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,9 @@
       <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\target\classes\com\example\sfaaproj" />
       <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\target\SFAAProj-1.0-SNAPSHOT\images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\koner\OneDrive\Documents\IntelliJGit\SFAA\src\main\webapp\WEB-INF" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -77,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715057927957</updated>
       <workItem from="1715057929049" duration="7898000" />
-      <workItem from="1715100890517" duration="8034000" />
+      <workItem from="1715100890517" duration="9077000" />
     </task>
     <task id="LOCAL-00001" summary="remove target from ignore">
       <option name="closed" value="true" />
@@ -287,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715111726818</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="JSP Restriction &amp; Account Page Update">
+      <option name="closed" value="true" />
+      <created>1715128579574</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715128579574</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +333,7 @@
     <MESSAGE value="Account Image Change" />
     <MESSAGE value="Expense url fix" />
     <MESSAGE value="SQL Data Param Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="SQL Data Param Fix" />
+    <MESSAGE value="JSP Restriction &amp; Account Page Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSP Restriction &amp; Account Page Update" />
   </component>
 </project>
