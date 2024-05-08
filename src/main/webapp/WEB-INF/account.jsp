@@ -170,7 +170,7 @@
             </div>
             <div class="input-group">
               <label for="gpa">GPA:</label>
-              <input type="text" id="gpa" name="gpa" required>
+              <input type="number" min="0" step="0.01" id="gpa" name="gpa" required>
             </div>
             <button type="button" onclick="UpdateAccountType('updAcademic')">Update Academic Info</button>
           </form>
