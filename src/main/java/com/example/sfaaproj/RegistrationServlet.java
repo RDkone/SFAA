@@ -61,7 +61,7 @@ public class RegistrationServlet extends HttpServlet {
                 if (rs.next()) {
                     session.setAttribute("user", username);
                     session.setAttribute("userId", rs.getInt(1));
-                    resp.sendRedirect("/WEB-INF/welcome.jsp");
+                    resp.sendRedirect("/welcome");
                 }
                 else {
                     req.setAttribute("error", "An attempting to register new user.");

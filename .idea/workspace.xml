@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="Added Welcome File">
+    <list default="true" id="a001a393-0cbb-42f5-8d27-3d5718e593d9" name="Changes" comment="Registration Url Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sfaaproj/RegistrationServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715057927957</updated>
       <workItem from="1715057929049" duration="7898000" />
-      <workItem from="1715100890517" duration="10821000" />
+      <workItem from="1715100890517" duration="11230000" />
     </task>
     <task id="LOCAL-00001" summary="remove target from ignore">
       <option name="closed" value="true" />
@@ -322,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715129835750</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Registration Url Fix">
+      <option name="closed" value="true" />
+      <created>1715140627004</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1715140627004</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +371,7 @@
     <MESSAGE value="Account Page Error Fix" />
     <MESSAGE value="Account Page Update" />
     <MESSAGE value="Added Welcome File" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Welcome File" />
+    <MESSAGE value="Registration Url Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registration Url Fix" />
   </component>
 </project>
